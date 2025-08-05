@@ -3,11 +3,16 @@ main = "src/index.ts"
 compatibility_date = "2024-12-30"
 compatibility_flags = [ "nodejs_compat" ]
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "blazenote"
-# database_id = "<DATABASE ID>"
-# migrations_dir = "./migrations"
+# Custom domain configuration
+[[routes]]
+pattern = "blazenote-backend.nostalgic-keyframe.sxplab.com"
+custom_domain = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "blazenote"
+database_id = "a675aaea-daad-4775-ba12-7d4bc6df1072"
+migrations_dir = "./migrations"
 
 # [ai]
 # binding = "AI"
